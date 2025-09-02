@@ -1,105 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vignesh's Portfolio">
-    <title>Vignesh's Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .intro {
-            text-align: center;
-            margin-top: 50px;
-        }
-        .projects, .contact {
-            margin-top: 50px;
-        }
-        .projects h2, .contact h2 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .project-item {
-            display: inline-block;
-            width: 30%;
-            margin-right: 3%;
-            margin-bottom: 20px;
-            text-align: center;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-        .project-item img {
-            width: 100%;
-            border-radius: 5px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 50px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Vignesh's Portfolio</h1>
-        <p>Web Developer | Designer | Creator</p>
-    </header>
+<span class="chip">C / C++ Basics</span>
+<span class="chip">Python Basics</span>
+<span class="chip">SQL Basics</span>
+<span class="chip">Responsive Design</span>
+</div>
+</div>
+</div>
+</section>
 
-    <div class="container">
-        <section class="intro">
-            <h2>Welcome to my Portfolio!</h2>
-            <p>Hello, I am Vignesh, a passionate web developer and designer. Below you'll find some of my recent work and projects.</p>
-        </section>
 
-        <section class="projects">
-            <h2>Recent Projects</h2>
-            <div class="project-item">
-                <img src="https://via.placeholder.com/300" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>A brief description of this project and its impact.</p>
-            </div>
-            <div class="project-item">
-                <img src="https://via.placeholder.com/300" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>A brief description of this project and its impact.</p>
-            </div>
-            <div class="project-item">
-                <img src="https://via.placeholder.com/300" alt="Project 3">
-                <h3>Project 3</h3>
-                <p>A brief description of this project and its impact.</p>
-            </div>
-        </section>
+<section id="projects" class="projects">
+<div class="container">
+<h2>Projects</h2>
+<div class="grid cols-3">
+<article class="card project">
+<h3>Student Task Tracker</h3>
+<p class="muted">A simple web app to add, categorize, and complete tasks. Built with HTML/CSS/JS and localStorage.</p>
+<div class="links">
+<a href="#" aria-label="View live demo">Live</a>
+<a href="#" aria-label="View source code">Code</a>
+</div>
+</article>
+<article class="card project">
+<h3>Notes App</h3>
+<p class="muted">Create, search, and delete notes with a clean UI. Export to JSON.</p>
+<div class="links">
+<a href="#">Live</a>
+<a href="#">Code</a>
+</div>
+</article>
+<article class="card project">
+<h3>Portfolio Website</h3>
+<p class="muted">This very site – lightweight, responsive, and accessible. Pure HTML/CSS with a sprinkle of JS.</p>
+<div class="links">
+<a href="#">Live</a>
+<a href="#">Code</a>
+</div>
+</article>
+</div>
+</div>
+</section>
 
-        <section class="contact">
-            <h2>Contact Me</h2>
-            <p>If you have any questions or want to collaborate, feel free to reach out!</p>
-            <p>Email: vignesh@example.com</p>
-            <p>Phone: +1234567890</p>
-        </section>
-    </div>
 
-    <footer>
-        <p>&copy; 2025 Vignesh. All rights reserved.</p>
-    </footer>
+<section id="contact">
+<div class="container">
+<h2>Contact</h2>
+<div class="grid cols-2">
+<div class="card">
+<h3>Let's connect</h3>
+<p class="muted">Feel free to reach out for internships, collaborations, or just to say hi!</p>
+<ul>
+<li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noreferrer noopener">in/your-username</a></li>
+<li>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noreferrer noopener">github.com/your-username</a></li>
+</ul>
+</div>
+<form class="card" onsubmit="event.preventDefault(); window.location.href=`mailto:your.email@example.com?subject=Hello%20Vignesh&body=${encodeURIComponent(document.getElementById('msg').value)}`">
+<label for="msg" style="display:block; margin-bottom:8px; font-weight:600">Quick Message</label>
+<textarea id="msg" rows="6" placeholder="Write your message…" style="width:100%; padding:12px; border-radius:12px; border:1px solid var(--border); background:var(--panel); color:var(--text)"></textarea>
+<div style="display:flex; gap:10px; margin-top:10px">
+<button class="btn btn-primary" type="submit">Send</button>
+<button class="btn" type="reset">Clear</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+
+
+<footer>
+<div class="container" style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap">
+<div>© <span id="year"></span> Vignesh • All rights reserved.</div>
+<div class="muted">Built with semantic HTML & CSS</div>
+</div>
+</footer>
+
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
