@@ -1,83 +1,102 @@
 <!DOCTYPE html>
-<span class="chip">C / C++ Basics</span>
-<span class="chip">Python Basics</span>
-<span class="chip">SQL Basics</span>
-<span class="chip">Responsive Design</span>
-</div>
-</div>
-</div>
-</section>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vignesh's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+        .about, .education, .skills {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills li {
+            background-color: #f1f1f1;
+            margin: 8px 0;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>vignesh's Portfolio</h1>
+        <p>BCA 2nd Year Student</p>
+    </header>
 
+    <div class="container">
+        <!-- About Section -->
+        <div class="about">
+            <h2 class="section-title">About Me</h2>
+            <p>Hello! My name is vignesh, and I am currently pursuing my 2nd year in BCA (Bachelor of Computer Applications). I am passionate about technology, programming, and continuously improving my skills.</p>
+        </div>
 
-<section id="projects" class="projects">
-<div class="container">
-<h2>Projects</h2>
-<div class="grid cols-3">
-<article class="card project">
-<h3>Student Task Tracker</h3>
-<p class="muted">A simple web app to add, categorize, and complete tasks. Built with HTML/CSS/JS and localStorage.</p>
-<div class="links">
-<a href="#" aria-label="View live demo">Live</a>
-<a href="#" aria-label="View source code">Code</a>
-</div>
-</article>
-<article class="card project">
-<h3>Notes App</h3>
-<p class="muted">Create, search, and delete notes with a clean UI. Export to JSON.</p>
-<div class="links">
-<a href="#">Live</a>
-<a href="#">Code</a>
-</div>
-</article>
-<article class="card project">
-<h3>Portfolio Website</h3>
-<p class="muted">This very site – lightweight, responsive, and accessible. Pure HTML/CSS with a sprinkle of JS.</p>
-<div class="links">
-<a href="#">Live</a>
-<a href="#">Code</a>
-</div>
-</article>
-</div>
-</div>
-</section>
+        <!-- Education Section -->
+        <div class="education">
+            <h2 class="section-title">Education</h2>
+            <ul>
+                <li><strong>BCA - 2nd Year</strong> | madras university| 2023 - Present</li>
+                <li><strong>sairam matriculation hr sec school</strong> |sairam matriculation hr sec school| 2021 - 2023</li>
+            </ul>
+        </div>
 
+        <!-- Skills Section -->
+        <div class="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>Programming Languages: Python,c,Java, C++</li>
+                <li>Web Development: HTML, CSS, JavaScript</li>
+                <li>Database Management: MySQL</li>
+                <li>Version Control: Git</li>
+                <li>Problem Solving & Algorithms</li>
+            </ul>
+        </div>
+    </div>
 
-<section id="contact">
-<div class="container">
-<h2>Contact</h2>
-<div class="grid cols-2">
-<div class="card">
-<h3>Let's connect</h3>
-<p class="muted">Feel free to reach out for internships, collaborations, or just to say hi!</p>
-<ul>
-<li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-<li>LinkedIn: <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noreferrer noopener">in/your-username</a></li>
-<li>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noreferrer noopener">github.com/your-username</a></li>
-</ul>
-</div>
-<form class="card" onsubmit="event.preventDefault(); window.location.href=`mailto:your.email@example.com?subject=Hello%20Vignesh&body=${encodeURIComponent(document.getElementById('msg').value)}`">
-<label for="msg" style="display:block; margin-bottom:8px; font-weight:600">Quick Message</label>
-<textarea id="msg" rows="6" placeholder="Write your message…" style="width:100%; padding:12px; border-radius:12px; border:1px solid var(--border); background:var(--panel); color:var(--text)"></textarea>
-<div style="display:flex; gap:10px; margin-top:10px">
-<button class="btn btn-primary" type="submit">Send</button>
-<button class="btn" type="reset">Clear</button>
-</div>
-</form>
-</div>
-</div>
-</section>
-
-
-<footer>
-<div class="container" style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap">
-<div>© <span id="year"></span> Vignesh • All rights reserved.</div>
-<div class="muted">Built with semantic HTML & CSS</div>
-</div>
-</footer>
-
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+    <footer>
+        <p>&copy; 2025 vignesh. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
